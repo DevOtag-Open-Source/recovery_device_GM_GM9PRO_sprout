@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := jasmine_sprout
+PRODUCT_RELEASE_NAME := GM9PRO_sprout
 
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -67,27 +67,27 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Device identifier. This must come after all inclusions
 PRODUCT_PLATFORM := SDM660
-PRODUCT_NAME := omni_jasmine_sprout
-PRODUCT_DEVICE := jasmine_sprout
-PRODUCT_BRAND := xiaomi
-PRODUCT_MODEL := Mi A2
-PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_NAME := omni_GM9PRO_sprout
+PRODUCT_DEVICE := GM9PRO_sprout
+PRODUCT_BRAND := GM
+PRODUCT_MODEL := GM 9 Pro
+PRODUCT_MANUFACTURER := GM
 
 # add support for future ota updates
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.secure=1 \
     ro.adb.secure=0 \
     ro.allow.mock.location=0
-    
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="jasmine_sprout" \
-    PRODUCT_NAME="jasmine" \
-    PRIVATE_BUILD_DESC="jasmine-user 9 PKQ1.180904.001 V10.0.10.0.PDIMIXM release-keys"
-	
-TARGET_VENDOR_PRODUCT_NAME := jasmine
 
-BUILD_FINGERPRINT := "xiaomi/jasmine/jasmine_sprout:9/PKQ1.180904.001/V10.0.10.0.PDIMIXM:user/release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_DEVICE="GM9PRO_sprout" \
+    PRODUCT_NAME="GM9PRO" \
+    PRIVATE_BUILD_DESC="gm9pro-user 9 PKQ1.180904.001 254 release-keys"
+
+TARGET_VENDOR_PRODUCT_NAME := GM9PRO
+
+BUILD_FINGERPRINT := "GM/GM9PRO/GM9PRO_sprout:9/PKQ1.180904.001/254:user/release-keys"
 
 # Maintainer Prop
 PRODUCT_BUILD_PROP_OVERRIDES += \
-DEVICE_MAINTAINERS="Manish4586"
+DEVICE_MAINTAINERS="DevOtag"
